@@ -7,7 +7,7 @@
             <br>
             <v-card-title 
                 class="metge" 
-                @click="selleccionarMetge(pos)"
+                @click="seleccionarMetge(pos)"
                 v-for="(metge, pos) in metges" 
                 :keys="pos" 
                 >
@@ -49,10 +49,10 @@ export default {
             }
         },
         methods:{
-            selleccionarMetge(element){
+            seleccionarMetge(element){
                 {
-                    console.log("Metge seleccionat", this.metges[element])
-                    this.$emit('nou_metge_event', this.metges[pos])
+                    console.log("CHILD", this.metges[element])
+                    this.$emit('nou_metge_event', this.metges[element])
                 }
             }
         }

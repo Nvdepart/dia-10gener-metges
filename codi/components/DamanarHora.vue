@@ -3,11 +3,11 @@
         <v-row>
             <v-col>
                 <EscollirMetge
-                @
+                @nou_metge_event="metgeEscollit"
                 ></EscollirMetge>
             </v-col>
             <v-col>
-                <!--<EscollirData></EscollirData>-->
+                <EscollirData :metge="metgeSeleccionat"></EscollirData>
             </v-col>
         </v-row>
     </v-container>
