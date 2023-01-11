@@ -36,17 +36,16 @@
                     <p>El teu email es: <Strong>{{emailPatient}}</Strong></p>
                     <p>El teu telefon es: <Strong>{{telefonPatient}}</Strong></p>
             
-                    <template v-slot:actions>
+                   
                     <v-btn
-                        color="white"
+                        color="#ffffff"
                         variant="text"
                         @click="snackbar = false"
                     >
                     Close
                     </v-btn>
-                </template>
+                
             </v-snackbar>
-        <p>{{nomPatient}} <br>{{emailPatient}} <br>{{telefonPatient}}</p>
     </div>
 </template>
 
